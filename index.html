@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terra Verde — Landscape Design Company</title>
+  <meta name="description" content="Landscape design portfolio, project cost calculation and a free visit from a measurement engineer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Terra Verde</a>
+    <a class="phone" href="tel:+77270000000">+7 (727) 000-00-00</a>
+
+    <input type="checkbox" id="menu-toggle" class="visually-hidden" aria-label="Toggle menu">
+    <label for="menu-toggle" class="burger" aria-hidden="true"><span></span></label>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#gardens">Completed Gardens</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#price">Price List</a></li>
+        <li><a href="#contact">Contacts</a></li>
+        <li class="nav-phone"><a href="tel:+77270000000">+7 (727) 000-00-00</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">We Create Harmony of Nature on Your Site</h1>
+      <a class="cta" href="#contact">Calculate Project Cost</a>
+    </section>
+
+    <section id="gardens" class="section" aria-labelledby="gardens-title">
+      <h2 id="gardens-title">Completed Gardens</h2>
+      <p class="lead">Every card shows the site before and after our work.</p>
+
+      <ul class="cards">
+        <li>
+          <article class="card">
+            <figure class="ba" style="--before:url(images/garden1-before.webp); --after:url(images/garden1-after.webp)">
+              <span class="before" role="img" aria-label="Garden 1 before" data-label="Before"></span>
+              <span class="after" role="img" aria-label="Garden 1 after" data-label="After"></span>
+            </figure>
+            <h3>Courtyard with a pond</h3>
+            <p class="area">0.8 acres</p>
+            <p class="style-tag">Style: Japanese minimalism</p>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <figure class="ba" style="--before:url(images/garden2-before.webp); --after:url(images/garden2-after.webp)">
+              <span class="before" role="img" aria-label="Garden 2 before" data-label="Before"></span>
+              <span class="after" role="img" aria-label="Garden 2 after" data-label="After"></span>
+            </figure>
+            <h3>Family park by the river</h3>
+            <p class="area">2.4 acres</p>
+            <p class="style-tag">Style: Natural meadow</p>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <figure class="ba" style="--before:url(images/garden3-before.webp); --after:url(images/garden3-after.webp)">
+              <span class="before" role="img" aria-label="Garden 3 before" data-label="Before"></span>
+              <span class="after" role="img" aria-label="Garden 3 after" data-label="After"></span>
+            </figure>
+            <h3>Terraced hillside garden</h3>
+            <p class="area">1.5 acres</p>
+            <p class="style-tag">Style: Mediterranean</p>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <figure class="ba" style="--before:url(images/garden4-before.webp); --after:url(images/garden4-after.webp)">
+              <span class="before" role="img" aria-label="Garden 4 before" data-label="Before"></span>
+              <span class="after" role="img" aria-label="Garden 4 after" data-label="After"></span>
+            </figure>
+            <h3>Office green square</h3>
+            <p class="area">3.1 acres</p>
+            <p class="style-tag">Style: Modern formal</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section id="services" class="section alt" aria-labelledby="services-title">
+      <h2 id="services-title">Services</h2>
+      <ul class="cards cards-3">
+        <li><article class="card"><h3>Design project</h3><p>Master plan, planting scheme and 3D visuals.</p></article></li>
+        <li><article class="card"><h3>Construction</h3><p>Grading, drainage, paths, lawns and irrigation.</p></article></li>
+        <li><article class="card"><h3>Care and support</h3><p>Seasonal pruning, feeding and plant replacement.</p></article></li>
+      </ul>
+    </section>
+
+    <section id="price" class="section" aria-labelledby="price-title">
+      <h2 id="price-title">Price List</h2>
+      <dl class="prices">
+        <dt>Design project</dt><dd>from 250 000 ₸ / acre</dd>
+        <dt>Lawn with automatic irrigation</dt><dd>from 900 000 ₸ / acre</dd>
+        <dt>Full landscaping</dt><dd>from 1 800 000 ₸ / acre</dd>
+        <dt>Yearly care</dt><dd>from 300 000 ₸ / acre</dd>
+      </dl>
+    </section>
+
+    <section id="contact" class="section alt" aria-labelledby="contact-title">
+      <h2 id="contact-title">Call a measurement engineer</h2>
+      <p class="lead">Leave a request. The engineer visits your site, measures it and prepares the estimate.</p>
+
+      <form class="request-form" action="#" method="post">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" placeholder="Your name" required minlength="2" autocomplete="name">
+        </label>
+        <label>
+          <span>Contact Phone</span>
+          <input type="tel" name="phone" placeholder="+7 700 000 00 00" required pattern="\+?[0-9\s\-()]{10,18}" autocomplete="tel">
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" placeholder="name@example.com" required autocomplete="email">
+        </label>
+        <label>
+          <span>Geographical Location of the Object</span>
+          <input type="text" name="location" placeholder="City, street or village" required minlength="3">
+        </label>
+        <label>
+          <span>Calendar Date</span>
+          <input type="date" name="date" required>
+        </label>
+        <button type="submit" class="cta">Send request</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <section aria-labelledby="kb-title">
+      <h2 id="kb-title">Knowledge base</h2>
+      <nav aria-label="Flora care">
+        <ul>
+          <li><a href="#">Lawn care by season</a></li>
+          <li><a href="#">Watering trees and shrubs</a></li>
+          <li><a href="#">Preparing plants for winter</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section aria-labelledby="nursery-title">
+      <h2 id="nursery-title">Partner nurseries</h2>
+      <nav aria-label="Partner nurseries">
+        <ul>
+          <li><a href="#">Green Valley Nursery</a></li>
+          <li><a href="#">Altai Seedlings</a></li>
+          <li><a href="#">Almaty Roses</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section aria-labelledby="legal-title">
+      <h2 id="legal-title">Legal information</h2>
+      <p>Terra Verde LLP, BIN 000000000000</p>
+      <p>© 2026 Terra Verde. All rights reserved.</p>
+      <p><a href="#">Privacy policy</a></p>
+    </section>
+
+    <section aria-label="Theme">
+      <input type="checkbox" id="theme-toggle" class="visually-hidden">
+      <label for="theme-toggle" class="theme-switch">Dark / Light mode</label>
+    </section>
+  </footer>
+
+</body>
+</html>
