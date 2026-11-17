@@ -16,7 +16,7 @@
   --border:    light-dark(#8C8666, #46503A);
   --accent:    #E8B73A;                          /* CTA in both themes */
   --on-accent: #0F110B;
-  --ok:        light-dark(#1D6B3B, #6FD99A);
+  --ok:        light-dark(#1D6B3B, #FFFFFF);
   --error:     light-dark(#A5231B, #FF9A92);
   --radius:    1.25rem;                          /* 20px, as in Figma */
   --font:      "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
